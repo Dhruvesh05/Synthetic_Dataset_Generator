@@ -1,0 +1,35 @@
+.section-final-cta {
+  margin: 96px 0 0;
+}
+
+.final-cta-card {
+  border: 1px solid #cde2db;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff, #f4fbf8);
+  box-shadow: 0 14px 32px rgba(12, 37, 34, 0.08);
+  padding: 36px;
+  text-align: center;
+}
+
+.final-cta-card h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.5vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.final-cta-card p {
+  margin: 14px auto 0;
+  color: #5b677a;
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.final-cta-card .btn {
+  margin-top: 22px;
+}
+
+@media (max-width: 768px) {
+  .final-cta-card {
+    padding: 26px 20px;
+  }
+}

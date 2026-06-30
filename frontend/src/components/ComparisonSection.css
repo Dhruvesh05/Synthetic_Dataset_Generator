@@ -1,0 +1,30 @@
+.comparison-section {
+  margin: 0;
+}
+
+.comparison-container {
+  width: 100%;
+}
+
+.comparison-header {
+  margin-bottom: 24px;
+}
+
+.comparison-title {
+  margin: 0;
+  font-size: clamp(1.7rem, 3.2vw, 2.2rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.comparison-subtitle {
+  margin: 10px 0 0;
+  color: #5b677a;
+  line-height: 1.6;
+}
+
+.comparison-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

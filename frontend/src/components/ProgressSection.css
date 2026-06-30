@@ -1,0 +1,130 @@
+.progress-section-wrapper {
+  margin: 32px 0;
+  padding: 28px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #d9e3de;
+  box-shadow: 0 10px 30px rgba(12, 37, 34, 0.08);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.progress-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.progress-status-badge {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.progress-status-badge.status-queued {
+  color: #92400e;
+  border-color: #facc15;
+  background: #fef9c3;
+}
+
+.progress-status-badge.status-processing {
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+  background: #eff6ff;
+}
+
+.progress-status-badge.status-completed {
+  color: #116149;
+  border-color: #bde8d7;
+  background: #edf9f3;
+}
+
+.progress-status-badge.status-failed {
+  color: #b91c1c;
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.progress-bar-container {
+  height: 12px;
+  border-radius: 999px;
+  background: #e7efeb;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-bar-fill.status-queued {
+  background: #d97706;
+}
+
+.progress-bar-fill.status-processing {
+  background: #1d4ed8;
+}
+
+.progress-bar-fill.status-completed {
+  background: #0f766e;
+}
+
+.progress-bar-fill.status-failed {
+  background: #b91c1c;
+}
+
+.progress-shimmer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: shimmer 1.8s linear infinite;
+}
+
+.progress-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.progress-percentage {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.progress-message {
+  color: #5b677a;
+  font-size: 0.86rem;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .progress-section-wrapper {
+    padding: 22px 18px;
+  }
+
+  .progress-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

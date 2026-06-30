@@ -1,0 +1,48 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.about-content h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3.8vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.about-content p {
+  margin: 16px 0 0;
+  color: #5b677a;
+  line-height: 1.7;
+}
+
+.about-points {
+  display: grid;
+  gap: 12px;
+}
+
+.about-point {
+  border: 1px solid #d9e3de;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(12, 37, 34, 0.05);
+}
+
+.about-point h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.about-point p {
+  margin: 8px 0 0;
+  color: #5b677a;
+  line-height: 1.62;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

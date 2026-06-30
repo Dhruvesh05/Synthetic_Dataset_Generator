@@ -9,9 +9,16 @@ backend/env/
 venv/
 .venv/
 
+# Installed packages
+backend/node_modules/
+
 # Generated data and runtime files
 backend/temp/
 *.csv
+
+# Backups and legacy copies
+*.backup
+*_old.*
 
 # Node / frontend build output
 frontend/node_modules/
