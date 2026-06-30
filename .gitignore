@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# Virtual environments
+backend/env/
+venv/
+.venv/
+
+# Generated data and runtime files
+backend/temp/
+*.csv
+
+# Node / frontend build output
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment files
+.env
+.env.*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
